@@ -1,9 +1,46 @@
-header {
-    border-bottom: 2px solid #ffffff;
-}
-header > .title {
+#header {
+	display: grid;
+	position: relative;
+
+	margin: auto;
+	margin-top: 20px;
+	padding: 5px 40px;
+	width: 80%;
     
+	border-bottom: 2px solid #65e97f;
+
+	color: #3dd35b;
+
+	grid-template-columns: auto 1fr;
+	grid-template-areas: "title menu";
 }
-header > .menu {
+#header > .title {
+	padding: 0 40px;
+	grid-area: title;
+    font-size: 32px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+}
+#header > .menu {
+	display: flex;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+
+	padding: 0 40px;
+	grid-area: menu;
+    font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+
+	flex: 1;
+	justify-content: right;
+}
+#header > .menu > .item {
+	margin: 0 2px;
+    font-size: 24px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	text-align: right;
     
 }

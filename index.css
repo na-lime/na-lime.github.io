@@ -1,0 +1,67 @@
+#main {
+	margin: auto;
+	width: 60%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#main > .content::after {
+	position: absolute;
+	content: '';
+	top: 4px;
+	right: 4px;
+	width: 15px;
+	height: 15px;
+	/* background-color: #65e97f; */
+	border: 3px solid #65e97f;
+	border-radius: 10px;
+}
+#main > .content {
+	position: relative;
+	display: grid;
+	border-radius: 10px;
+	/* background-color: #f0f0f0; */
+	border: 3px solid #65e97f;
+	padding: 10px;
+	margin: 10px;
+	grid-template-areas: "head" "lore" "time";
+}
+#main > .content > .head {
+	position: relative;
+	font-weight: bold;
+	margin: 5px 10px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	/* text-shadow: 1px 0 0 black; */
+}
+#main > .content > .head::after {
+	position: absolute;
+	content: '';
+	top: 3px;
+	left: -10px;
+	width: 5px;
+	height: 1em;
+	background-color: #65e97f;
+}
+#main > .content > .lore {
+	margin: 0 20px;
+	font-size: 14px;
+	color: gray;
+}
+#main > .content > .time {
+	position: relative;
+	text-align: right;
+	color: silver;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+#main > .content > .time::after {
+	position: absolute;
+	content: '';
+	bottom: 2px;
+	right: 4px;
+	width: 76px;
+	height: 1.5px;
+	background-color: silver;
+}
