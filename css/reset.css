@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+
+	padding: 0;
+	margin: 0;
+}
+
+a img {
+	-webkit-user-drag: none;
+}
+img span {
+    user-select: none;
+}
