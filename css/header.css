@@ -7,7 +7,7 @@
 	padding: 5px 40px;
 	width: 80%;
     
-	border-bottom: 2px solid #65e97f;
+	/* border-bottom: 2px solid #65e97f; */
 
 	color: #3dd35b;
 
@@ -20,6 +20,9 @@
     font-size: 32px;
 	font-family: 'Courier New', Courier, monospace;
 	font-weight: bold;
+}
+#header > .title > img.logo {
+	width: 50px;
 }
 #header > .menu {
 	display: flex;
@@ -38,9 +41,28 @@
 }
 #header > .menu > .item {
 	margin: 0 2px;
+	width: 24px;
+	height: 24px;
     font-size: 24px;
 	font-family: 'Courier New', Courier, monospace;
 	font-weight: bold;
 	text-align: right;
     
+}
+
+.icon {
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.icon::before {
+	position: absolute;
+	background-image: inherit;
+	
+}
+.twitter {
+	background-image: url("../icon/twitter.svg");
+}
+.github {
+	background-image: url("../icon/github.png");
 }
